@@ -1,0 +1,44 @@
+{
+  "name": "esercitazione-29_03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "prettier": "prettier . --write",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.4.1",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "framer-motion": "^4.0.3",
+    "next": "^10.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "lint-staged": {
+    "*.{json,js,jsx,ts,tsx}": [
+      "prettier . --write",
+      "eslint . --fix"
+    ]
+  }
+}
